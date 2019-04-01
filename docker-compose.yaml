@@ -1,0 +1,19 @@
+version: "3"
+services:
+  main:
+    build: ./main
+    ports:
+    - "4000:80"
+  react-app:
+    build:
+      context: ./react-app
+    ports:
+    - "4001:80"
+  vue-app:
+    build:
+      context: ./vue-app
+    ports:
+      - "4002:80"
+
+
+
